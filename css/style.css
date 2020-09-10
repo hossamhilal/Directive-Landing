@@ -1656,7 +1656,8 @@ header {
     margin: 0 20px 0 0;
 }
 
-.en .contactBox p , label {
+.en .contactBox p , 
+.en .contactBox label {
     text-align: left;
 }
 
