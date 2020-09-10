@@ -376,7 +376,7 @@ header {
     font-size: 41px;
     line-height: 78px;
     color: var(--white);
-    text-align: right;
+    text-align: initial;
     font-weight: bold;
     margin-top: 50px;
 }
@@ -622,7 +622,7 @@ header {
 
 .aboutUs {
     padding: 65px 0;
-    text-align: right;
+    text-align: initial;
     overflow: hidden;
 }
 
@@ -632,7 +632,7 @@ header {
     font-weight: 900;
     color: var(--darkBlue);
     position: relative;
-    text-align: right;
+    text-align: initial;
     margin-bottom: 40px;
 }
 
@@ -706,7 +706,7 @@ header {
 .WhyUsBlock::before {
     content: '';
     background: var(--darkBlue);
-    height: 2px;
+    height: 3px;
     width: 10px;
     display: block;
     position: absolute;
@@ -1374,7 +1374,7 @@ header {
 .footer {
     color: var(--white);
     padding: 25px 0 35px;
-    text-align: right;
+    text-align: initial;
     overflow: hidden;
 }
 
@@ -1611,4 +1611,102 @@ header {
 
 .wow {
     animation-duration: 2s;
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||             En            ||========================*/
+/*==========================||---------------------------||========================*/
+
+.en {
+    direction: ltr;
+    text-align: left;
+}
+
+.en .social a {
+    margin: 0 15px 0 0;
+}
+
+.en .language {
+    margin: 0;
+}
+
+.en .call {
+    margin-left: 20px;
+    padding: 2px 2px 2px 7px;
+}
+
+.en .aboutUs p {
+    text-align: left;
+}
+
+.en .WhyUsBlock {
+    border-left: 3px solid var(--darkBlue);
+    border-right: 0;
+    padding: 0 0 0 18px;
+    text-align: left;
+}
+
+.en .WhyUsBlock::before {
+    left: -3px;
+    right: auto;
+    transform: rotate(-45deg);
+}
+
+.en .contactBox li img {
+    margin: 0 20px 0 0;
+}
+
+.en .contactBox p , label {
+    text-align: left;
+}
+
+.en .followUS .social a {
+    margin: 0 36px 0 0;
+}
+
+.en .subscribe-box button {
+    text-align: left;
+}
+
+.en .subscribe-box button img {
+    transform: rotate(180deg);
+}
+
+.en .footer-info li img {
+    margin: 0 10px 0 0;
+}
+
+.en .contact-form .social {
+    right: 0;
+    left: auto;
+}
+
+.en .copyright p {
+    margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .en .navBtn {
+        left: auto;
+        right: 0;
+        margin: 15px 0 0 30px;
+    }
+
+    .en .social a {
+        margin: 0 5px 0 0;
+    }
+
+    .en .call {
+        margin-left: 10px;
+    }
+
+    .call icon {
+        margin: 0 0 0 5px;
+    }
+}
+
+@media (min-width:768px) {
+    .en .headerNav a {
+        margin: 0 45px 0 0;
+    }
 }

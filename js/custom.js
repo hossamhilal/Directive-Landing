@@ -25,6 +25,8 @@ $(document).ready(function ($) {
     $('.headerNav a').on('click', function(e) {
         e.preventDefault();
         $('.headerNav a').removeClass('active');
+        $('.headerNav').removeClass('show');     
+        $('body').removeClass('no-scroll');
         $(this).addClass('active');
         $('html, body').animate({ 
             scrollTop: $($(this).attr('href')).offset().top
